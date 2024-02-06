@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Presupuesto</title>
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+
+<h2 class="centered-text" >Presupuesto Total del Proyecto</h2>
+
+<table id="data-table" class="auto-table" border="1">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Categoría</th>
+      <th>Descripción</th>
+      <th>Tipo de recurso</th>
+      <th>Cantidad</th>
+      <th>Tipo de unidad</th>
+      <th>Valor unitario</th>
+      <th>Valor total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td contenteditable="false">Costos</td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Directos</option>
+            <option>Indirectos</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Materia prima</option>
+            <option>Mano de obra</option>
+            <option>Servicios</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Materiales</option>
+            <option>Insumos</option>
+            <option>Analista</option>
+            <option>Diseñador</option>
+            <option>Desarrollador</option>
+            <option>Lider de Proyecto</option>
+            <option>Internet</option>
+            <option>Electricidad</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Tecnologicos</option>
+            <option>Electronica</option>
+            <option>Licencias</option>
+            <option>Humano</option>
+            <option>Servicios</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="-" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Componentes</option>
+            <option>Licencia</option>
+            <option>Quincenal</option>
+            <option>Bimestral</option>
+            <option>Mensual</option>
+            <option>Semanal</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+    </tr>
+    <!------------------------------>
+    <tr>
+      <td contenteditable="false">Costos</td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Directos</option>
+            <option>Indirectos</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Materia prima</option>
+            <option>Mano de obra</option>
+            <option>Servicios</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Materiales</option>
+            <option>Insumos</option>
+            <option>Analista</option>
+            <option>Diseñador</option>
+            <option>Desarrollador</option>
+            <option>Lider de Proyecto</option>
+            <option>Internet</option>
+            <option>Electricidad</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Tecnologicos</option>
+            <option>Electronica</option>
+            <option>Licencias</option>
+            <option>Humano</option>
+            <option>Servicios</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="-" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Componentes</option>
+            <option>Licencia</option>
+            <option>Quincenal</option>
+            <option>Bimestral</option>
+            <option>Mensual</option>
+            <option>Semanal</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+    </tr>
+    <!------------------------------>
+    <tr>
+      <td contenteditable="false">Costos</td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Directos</option>
+            <option>Indirectos</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Materia prima</option>
+            <option>Mano de obra</option>
+            <option>Servicios</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Materiales</option>
+            <option>Insumos</option>
+            <option>Analista</option>
+            <option>Diseñador</option>
+            <option>Desarrollador</option>
+            <option>Lider de Proyecto</option>
+            <option>Internet</option>
+            <option>Electricidad</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Tecnologicos</option>
+            <option>Electronica</option>
+            <option>Licencias</option>
+            <option>Humano</option>
+            <option>Servicios</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="-" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Componentes</option>
+            <option>Licencia</option>
+            <option>Quincenal</option>
+            <option>Bimestral</option>
+            <option>Mensual</option>
+            <option>Semanal</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+    </tr>
+    <!------------------------------>
+    <tr>
+      <td contenteditable="false">Costos</td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Directos</option>
+            <option>Indirectos</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Materia prima</option>
+            <option>Mano de obra</option>
+            <option>Servicios</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Materiales</option>
+            <option>Insumos</option>
+            <option>Analista</option>
+            <option>Diseñador</option>
+            <option>Desarrollador</option>
+            <option>Lider de Proyecto</option>
+            <option>Internet</option>
+            <option>Electricidad</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Tecnologicos</option>
+            <option>Electronica</option>
+            <option>Licencias</option>
+            <option>Humano</option>
+            <option>Servicios</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="-" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Componentes</option>
+            <option>Licencia</option>
+            <option>Quincenal</option>
+            <option>Bimestral</option>
+            <option>Mensual</option>
+            <option>Semanal</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+    </tr>
+    <!------------------------------>
+    <tr>
+      <td contenteditable="false">Costos</td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Directos</option>
+            <option>Indirectos</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Materia prima</option>
+            <option>Mano de obra</option>
+            <option>Servicios</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Materiales</option>
+            <option>Insumos</option>
+            <option>Analista</option>
+            <option>Diseñador</option>
+            <option>Desarrollador</option>
+            <option>Lider de Proyecto</option>
+            <option>Internet</option>
+            <option>Electricidad</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Tecnologicos</option>
+            <option>Electronica</option>
+            <option>Licencias</option>
+            <option>Humano</option>
+            <option>Servicios</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="-" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Componentes</option>
+            <option>Licencia</option>
+            <option>Quincenal</option>
+            <option>Bimestral</option>
+            <option>Mensual</option>
+            <option>Semanal</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+    </tr>
+    <!------------------------------>
+    <tr>
+      <td contenteditable="false">Costos</td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Directos</option>
+            <option>Indirectos</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Materia prima</option>
+            <option>Mano de obra</option>
+            <option>Servicios</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Materiales</option>
+            <option>Insumos</option>
+            <option>Analista</option>
+            <option>Diseñador</option>
+            <option>Desarrollador</option>
+            <option>Lider de Proyecto</option>
+            <option>Internet</option>
+            <option>Electricidad</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Tecnologicos</option>
+            <option>Electronica</option>
+            <option>Licencias</option>
+            <option>Humano</option>
+            <option>Servicios</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="-" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Componentes</option>
+            <option>Licencia</option>
+            <option>Quincenal</option>
+            <option>Bimestral</option>
+            <option>Mensual</option>
+            <option>Semanal</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+    </tr>
+    <!------------------------------>
+    <tr>
+      <td contenteditable="false">Costos</td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Directos</option>
+            <option>Indirectos</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Materia prima</option>
+            <option>Mano de obra</option>
+            <option>Servicios</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Materiales</option>
+            <option>Insumos</option>
+            <option>Analista</option>
+            <option>Diseñador</option>
+            <option>Desarrollador</option>
+            <option>Lider de Proyecto</option>
+            <option>Internet</option>
+            <option>Electricidad</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Tecnologicos</option>
+            <option>Electronica</option>
+            <option>Licencias</option>
+            <option>Humano</option>
+            <option>Servicios</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="-" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option disabled selected hidden></option>
+            <option>Componentes</option>
+            <option>Licencia</option>
+            <option>Quincenal</option>
+            <option>Bimestral</option>
+            <option>Mensual</option>
+            <option>Semanal</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+    </tr>
+    <!------------------------------>
+
+    
+
+    <!--Fin tabla y muestra de resultados-->
+    <tr>
+      <td contenteditable="false"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="false">Total</td>
+      <td contenteditable="true" data-placeholder="$ -"><span id="suma-total">$ -</span></td>
+    </tr>
+    <!--Fin tabla y muestra de resultados-->
+    <!-- Agrega más filas con celdas editables aquí -->
+  </tbody>
+</table>
+
+<table id="data-table1" class="auto-table" border="1">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Tipo de recurso</th>
+      <th>Cantidad</th>
+      <th>Tipo de unidad</th>
+      <th>Valor unitario</th>
+      <th>Valor total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Celdas editables para los datos -->
+    <tr>
+      <td contenteditable="false">Gastos</td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option value="" disabled selected hidden></option>
+          <option>Administrativos</option>
+          <option>Ventas</option>
+          <option>Financieros</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option value="" disabled selected hidden></option>
+          <option>Luz</option>
+          <option>Intenert</option>
+          <option>Renta de oficinas</option>
+          <option>Papeleria</option>
+          <option>Venta de Software</option>
+          <option>Bodega</option>
+          <option>Publicidad</option>
+          <option>Propaganda</option>
+          <option>Vendedores</option>
+          <option>Prestamos de banco</option>
+          <option>Nominas</option>
+          <option>Intereses</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="-" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+    </tr>
+    <tr>
+      <td contenteditable="false">Gastos</td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option value="" disabled selected hidden></option>
+          <option>Administrativos</option>
+          <option>Ventas</option>
+          <option>Financieros</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option value="" disabled selected hidden></option>
+          <option>Luz</option>
+          <option>Intenert</option>
+          <option>Renta de oficinas</option>
+          <option>Papeleria</option>
+          <option>Venta de Software</option>
+          <option>Bodega</option>
+          <option>Publicidad</option>
+          <option>Propaganda</option>
+          <option>Vendedores</option>
+          <option>Prestamos de banco</option>
+          <option>Nominas</option>
+          <option>Intereses</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="-" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+    </tr>
+    <tr>
+      <td contenteditable="false">Gastos</td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option value="" disabled selected hidden></option>
+          <option>Administrativos</option>
+          <option>Ventas</option>
+          <option>Financieros</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option value="" disabled selected hidden></option>
+          <option>Luz</option>
+          <option>Intenert</option>
+          <option>Renta de oficinas</option>
+          <option>Papeleria</option>
+          <option>Venta de Software</option>
+          <option>Bodega</option>
+          <option>Publicidad</option>
+          <option>Propaganda</option>
+          <option>Vendedores</option>
+          <option>Prestamos de banco</option>
+          <option>Nominas</option>
+          <option>Intereses</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="-" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+    </tr>
+    <tr>
+      <td contenteditable="false">Gastos</td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option value="" disabled selected hidden></option>
+          <option>Administrativos</option>
+          <option>Ventas</option>
+          <option>Financieros</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option value="" disabled selected hidden></option>
+          <option>Luz</option>
+          <option>Intenert</option>
+          <option>Renta de oficinas</option>
+          <option>Papeleria</option>
+          <option>Venta de Software</option>
+          <option>Bodega</option>
+          <option>Publicidad</option>
+          <option>Propaganda</option>
+          <option>Vendedores</option>
+          <option>Prestamos de banco</option>
+          <option>Nominas</option>
+          <option>Intereses</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="-" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+    </tr>
+    <tr>
+      <td contenteditable="false">Gastos</td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option value="" disabled selected hidden></option>
+          <option>Administrativos</option>
+          <option>Ventas</option>
+          <option>Financieros</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option value="" disabled selected hidden></option>
+          <option>Luz</option>
+          <option>Intenert</option>
+          <option>Renta de oficinas</option>
+          <option>Papeleria</option>
+          <option>Venta de Software</option>
+          <option>Bodega</option>
+          <option>Publicidad</option>
+          <option>Propaganda</option>
+          <option>Vendedores</option>
+          <option>Prestamos de banco</option>
+          <option>Nominas</option>
+          <option>Intereses</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="-" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+    </tr>
+    <tr>
+      <td contenteditable="false">Gastos</td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option value="" disabled selected hidden></option>
+          <option>Administrativos</option>
+          <option>Ventas</option>
+          <option>Financieros</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option value="" disabled selected hidden></option>
+          <option>Luz</option>
+          <option>Intenert</option>
+          <option>Renta de oficinas</option>
+          <option>Papeleria</option>
+          <option>Venta de Software</option>
+          <option>Bodega</option>
+          <option>Publicidad</option>
+          <option>Propaganda</option>
+          <option>Vendedores</option>
+          <option>Prestamos de banco</option>
+          <option>Nominas</option>
+          <option>Intereses</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="-" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+    </tr>
+    <tr>
+      <td contenteditable="false">Gastos</td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option value="" disabled selected hidden></option>
+          <option>Administrativos</option>
+          <option>Ventas</option>
+          <option>Financieros</option>
+        </select>
+      </td>
+      <td contenteditable="false">
+        <select class="custom-select">
+          <option value="" disabled selected hidden></option>
+          <option>Luz</option>
+          <option>Intenert</option>
+          <option>Renta de oficinas</option>
+          <option>Papeleria</option>
+          <option>Venta de Software</option>
+          <option>Bodega</option>
+          <option>Publicidad</option>
+          <option>Propaganda</option>
+          <option>Vendedores</option>
+          <option>Prestamos de banco</option>
+          <option>Nominas</option>
+          <option>Intereses</option>
+        </select>
+      </td>
+      <td contenteditable="true" data-placeholder="-" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+      <td contenteditable="true" data-placeholder="$ -" onkeypress="return soloNumeros(event)"></td>
+    </tr>
+    
+
+    <!--Fin tabla y muestra de resultados-->
+    <tr>
+      <td contenteditable="false"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="false">Total</td>
+      <td contenteditable="true" data-placeholder="$ -"><span id="suma-total1">$ -</span></td>
+    </tr>
+
+    <tr>
+      <td contenteditable="false"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="false"></td>
+      <td contenteditable="false">Presupuesto Total</td>
+      <td contenteditable="true" data-placeholder="$ -"><span id="presupuesto-total">$ -</span></td>
+    </tr>
+    <!--Fin tabla y muestra de resultados-->
+    <!-- Agrega más filas con celdas editables aquí -->
+  </tbody>
+</table>
+
+
+
+
+<a href="#" id="mi-boton" class="back-button" onclick="window.history.back()">Regresar</a>
+
+<script>
+  //funcion para el placeholder de dinero en celdas
+  document.addEventListener('DOMContentLoaded', function() {
+    const cells = document.querySelectorAll('td[contenteditable="true"]');
+
+    cells.forEach(cell => {
+      cell.addEventListener('click', function() {
+        if (this.textContent === this.getAttribute('data-placeholder')) {
+          this.textContent = '';
+        }
+      });
+
+      cell.addEventListener('blur', function() {
+        if (this.textContent.trim() === '') {
+          this.textContent = this.getAttribute('data-placeholder');
+          this.textContent = '';
+        }
+      });
+    });
+  });
+  //aqui termina la funcion del place holder de celdas
+  //Funcion para que se agregen solo numeros a las celdas
+  function soloNumeros(event) {
+  const charCode = event.which ? event.which : event.keyCode;
+  const inputChar = String.fromCharCode(charCode);
+
+  // Permite solo números y el backspace (código 8)
+  if (!/^\d+$/.test(inputChar) && charCode !== 8) {
+    event.preventDefault();
+    return false;
+  }
+  return true;
+  }
+  //aqui termina la funcion para que se agregen solo numeros a las celdas
+
+  // Función para calcular todas las operaciones de la tabla 1
+  function calcularOperaciones() {
+    const rows = document.querySelectorAll('#data-table tbody tr');
+    let totalSum = 0;
+
+    rows.forEach(row => {
+      const cantidadText = row.cells[5].textContent;
+      const cantidad = parseFloat(cantidadText.trim() !== '' ? cantidadText : '1');
+      const valorUnitario = parseFloat(row.cells[7].textContent.replace('$', ''));
+
+      if (!isNaN(valorUnitario)) {
+        const valorTotal = cantidad * valorUnitario;
+        row.cells[8].textContent = `$ ${valorTotal.toFixed(2)}`;
+        totalSum += valorTotal;
+      }
+    });
+
+    const sumaTotalElement = document.getElementById('suma-total');
+    sumaTotalElement.textContent = `$ ${totalSum.toFixed(2)}`;
+  }
+  //aqui termina la funcion de la tabla 1
+
+  // Función para calcular todas las operaciones de la tabla 2
+  function calcularOperaciones1() {
+    const rows = document.querySelectorAll('#data-table1 tbody tr');
+    let totalSum = 0;
+
+    rows.forEach(row => {
+      const cantidadText = row.cells[3].textContent;
+      const cantidad = parseFloat(cantidadText.trim() !== '' ? cantidadText : '1');
+      const valorUnitario = parseFloat(row.cells[5].textContent.replace('$', ''));
+
+      if (!isNaN(valorUnitario)) {
+        const valorTotal = cantidad * valorUnitario;
+        row.cells[6].textContent = `$ ${valorTotal.toFixed(2)}`;
+        totalSum += valorTotal;
+      }
+    });
+
+    // Get the total sum from the first table
+    const firstTableSumText = document.getElementById('suma-total').textContent;
+    const firstTableSum = parseFloat(firstTableSumText.replace('$', ''));
+
+    // Calculate the grand total sum
+    const grandTotalSum = isNaN(totalSum) ? 0 : totalSum + firstTableSum;
+
+    // Update the Total sum of the second table
+    const sumaTotal = document.getElementById('suma-total1');
+    sumaTotal.textContent = `$ ${isNaN(totalSum) ? '0.00' : totalSum.toFixed(2)}`;
+
+    // Update the Grand Total sum
+    const presupuestoTotal = document.getElementById('presupuesto-total');
+    presupuestoTotal.textContent = `$ ${isNaN(grandTotalSum) ? '0.00' : grandTotalSum.toFixed(2)}`;
+  }
+  //aqui termina el calculo de la funcion para la tabla 2
+
+  // Función para agregar el evento de escucha a las celdas de cantidad y valor unitario
+  function agregarEventosDeEscucha() {
+    const cells = document.querySelectorAll('td[contenteditable="true"]');
+
+    cells.forEach(cell => {
+      cell.addEventListener('input', function() {
+        calcularOperaciones();
+        calcularOperaciones1();
+      });
+    });
+  }
+
+  // Llamar a la función para agregar los eventos de escucha al cargar la página
+  document.addEventListener('DOMContentLoaded', agregarEventosDeEscucha);
+  // aqui termina la funcion para los eventos de escucha u cargar el valor
+
+  //----------------------------------------------------------------------------//
+  
+ // Definir un conjunto para almacenar las filas editadas
+const filasEditadas = new Set();
+
+// Función para actualizar las opciones de un select
+function actualizarOpciones(selectElement, opciones) {
+  const selectedValue = selectElement.value; // Guardar el valor seleccionado
+  selectElement.innerHTML = '';
+  opciones.forEach((opcion) => {
+    const option = document.createElement('option');
+    option.textContent = opcion;
+    selectElement.appendChild(option);
+  });
+  // Restaurar el valor seleccionado después de actualizar las opciones
+  selectElement.value = selectedValue;
+}
+
+
+// Definir las opciones para cada tipo de recurso
+const tipoOptions = {
+  'Directos': ['Materia prima', 'Mano de obra'],
+  'Indirectos': ['Servicios']
+};
+
+// Definir las opciones para cada categoría
+const categoriaOptions = {
+  "Materia prima": ["Materiales", "Insumos"],
+  "Mano de obra": ["Analista", "Diseñador", "Desarrollador", "Tester", "Lider de Proyecto"],
+  "Servicios": ["Internet", "Electricidad"]
+  // Agrega más opciones de categoría según tus necesidades
+};
+
+// Definir las opciones para cada descripción
+const descripcionOptions = {
+  "Materiales": ["Tecnologicos", "Electronica"],
+  "Insumos": ["Licencias"],
+  "Analista": ["Humano"],
+  "Diseñador": ["Humano"],
+  "Desarrollador": ["Humano"],
+  "Tester": ["Humano"],
+  "Lider de Proyecto": ["Humano"],
+  "Internet": ["Servicio"],
+  "Electricidad": ["Servicio"]
+  // Agrega más opciones de descripción según tus necesidades
+};
+
+//Definir las opciones para cada recurso
+const tipoRecursos = {
+  "Tecnologicos": ["Componentes"],
+  "Electronica": ["Componentes"],
+  "Licencias": ["Licencia"],
+  "Humano": ["Quincenal", "Semanal"],
+  "Servicio": ["Mensual", "Bimestral"]
+  // Agrega más opciones de descripción según tus necesidades
+};
+
+// Obtener todas las filas de la tabla (incluyendo la cabecera)
+const filas = document.querySelectorAll('#data-table tbody tr');
+
+// Función para verificar y actualizar selects
+function verificarYActualizarSelects() {
+  // Recorrer cada fila y actualizar los selects
+  
+  filasEditadas.forEach((fila) => {
+    const tipoSelect = fila.querySelector('td:nth-child(2) select');
+    const categoriaSelect = fila.querySelector('td:nth-child(3) select');
+    const descripcionSelect = fila.querySelector('td:nth-child(4) select');
+    const tipoRecursoSelect = fila.querySelector('td:nth-child(5) select');
+
+    const tipoSeleccionado = tipoSelect.value;
+    const categorias = tipoOptions[tipoSeleccionado] || [];
+    actualizarOpciones(categoriaSelect, categorias);
+
+    const categoriaSeleccionada = categoriaSelect.value;
+    const descripciones = categoriaOptions[categoriaSeleccionada] || [];
+    actualizarOpciones(descripcionSelect, descripciones);
+
+    const descripcionSeleccionada = descripcionSelect.value;
+    const recursos = tipoRecursos[descripcionSeleccionada] || [];
+    actualizarOpciones(tipoRecursoSelect, recursos);
+  });
+}
+
+// Event Listeners para los selects de tipo, categoría y descripción
+filas.forEach((fila) => {
+  const tipoSelect = fila.querySelector('td:nth-child(2) select');
+  const categoriaSelect = fila.querySelector('td:nth-child(3) select');
+  const descripcionSelect = fila.querySelector('td:nth-child(4) select');
+  const tipoRecursoSelect = fila.querySelector('td:nth-child(5) select');
+
+  tipoSelect.addEventListener('change', () => {
+    filasEditadas.add(fila);
+    verificarYActualizarSelects();
+  });
+
+  categoriaSelect.addEventListener('change', () => {
+    filasEditadas.add(fila);
+    verificarYActualizarSelects();
+  });
+
+  descripcionSelect.addEventListener('change', () => {
+    filasEditadas.add(fila);
+    verificarYActualizarSelects();
+    if (filasEditadas.has(fila)) {
+    const descripcionSeleccionada = descripcionSelect.value;
+    // Si la descripción seleccionada es "Materiales", se actualiza el siguiente select con las opciones "Tecnologicos" y "Electronica"
+    if (descripcionSeleccionada === 'Materiales') {
+      const opcionesTecnologicos = ['Tecnologicos', 'Electronica'];
+      actualizarOpciones(tipoRecursoSelect, opcionesTecnologicos);
+    } else if (descripcionSeleccionada === 'Insumos') {
+      const opcionesInsumos = ['Licencias'];
+      actualizarOpciones(tipoRecursoSelect, opcionesInsumos);
+    }
+
+    if (descripcionSeleccionada === 'Internet' || descripcionSeleccionada === 'Electricidad') {
+      const opcionesServicios = ['Servicio'];
+      actualizarOpciones(tipoRecursoSelect, opcionesServicios);
+    }
+
+    if (descripcionSeleccionada === 'Analista' || descripcionSeleccionada === 'Diseñador' 
+    || descripcionSeleccionada === 'Desarrollador' || descripcionSeleccionada === 'Tester'
+    || descripcionSeleccionada === 'Lider de Proyecto'){
+      const opcionesHumanos = ['Humano'];
+      actualizarOpciones(tipoRecursoSelect, opcionesHumanos);
+    }
+
+  }
+  });
+});
+
+// Inicializar los selects en la primera fila cuando se carga la página
+if (filas.length > 0) {
+  verificarYActualizarSelects();
+}
+</script>
+
+</body>
+</html>

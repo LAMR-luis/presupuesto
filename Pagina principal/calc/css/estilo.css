@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('/img/Fondo3.jpeg') no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%; /* Ajusta el ancho de la tabla según tus preferencias */
+  margin: 20px auto; /* Centra la tabla en la página */
+}
+
+/* Estilo para el contenedor del select cuando se enfoca */
+#data-table select {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.custom-select {
+  appearance: none; /* Elimina el estilo de botón predeterminado en algunos navegadores */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none; /* Fondo transparente */
+  border: none; /* Elimina el borde */
+  width: 90%;
+  height: 100%;
+  padding: 7px; /* Añade un poco de espacio interno para que no se vea pegado al texto */
+  font-size: 16px; /* Tamaño de fuente personalizado */
+  color: #000000; /* Color de texto personalizado */
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23000" viewBox="0 0 16 16"%3E%3Cpath d="M8 13a.75.75 0 01-.53-.22L4.47 9.29a.75.75 0 011.06-1.06L8 11.94l2.47-2.47a.75.75 0 111.06 1.06l-3 3A.75.75 0 018 13z"%3E%3C/path%3E%3C/svg%3E'); /* Flecha hacia abajo (puedes cambiar la URL si prefieres otra flecha) */
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+}
+
+
+.custom-select:focus {
+  border: none; /* Elimina el borde al enfocar */
+  outline: none;
+  box-shadow: 0 0 3px #000000; /* Cambia el color según tu preferencia */
+}
+
+/* Estilo para la flecha cuando el select está desplegado */
+.custom-select:focus::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #2196F3 transparent transparent transparent; /* Cambia el color según tu preferencia */
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+/*Aqui termina el codigo de select*/
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td[contenteditable="true"], td[contenteditable="false"]{
+  background-color: #fff;
+}
+
+
+
+/*Aqui va el color del contenido de las tablas*/
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+p {
+  text-align: center;
+}
+
+.centered-text {
+  text-align: center;
+  
+}
+
+.auto-table {
+  table-layout: auto;
+  width: 70%; /* Establece el ancho de la tabla según tus necesidades */
+}
+
+/*Placeholder*/
+td[contenteditable="true"]:empty::before {
+content: attr(data-placeholder);
+color: #999; /* Color del placeholder */
+}
+
+
+/* Estilos del botón */
+.back-button {
+  display: inline-block;
+  background: rgba(0, 0, 0, .4);
+  color: white;
+  margin-top: 15px;
+  padding: 10px 15px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 5px;
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+
+/* Estilos para cambiar el cursor al pasar el mouse sobre el botón */
+.back-button:hover {
+  background: rgba(0, 0, 0, .7);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+#mi-boton {
+  position: relative;
+  left: 50%;
+  bottom: 5px;
+  transform: translateX(-50%);
+}

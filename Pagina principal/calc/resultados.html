@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Estado de Resultados</title>
+  <link rel="stylesheet" type="text/css" href="css/estilo1.css">
+</head>
+<body>
+
+<h2 class="centered-text">Estado de resultados analítico</h2>
+
+<table id="data-table" border="1">
+    <thead>
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td contenteditable="false" class="centered-text">Ventas totales</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ ---" onkeypress="return soloNumeros(event)"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">(-) menos: Devoluciones sobre ventas</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ ---" onkeypress="return soloNumeros(event)"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">(-) menos: Descuentos sobre ventas</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ ---" onkeypress="return soloNumeros(event)"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false" class="centered-text">(=) Ventas Netas</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true" data-placeholder="$ -"><span id="ventas-netas">$ -</span></td>
+      </tr>
+      <tr>
+        <td contenteditable="false" class="centered-text">Inventario Inicial</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ ---" onkeypress="return soloNumeros(event)"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">(+) más: Compras</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ ---" onkeypress="return soloNumeros(event)"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">(+) más: Gastos de compra</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ ---" onkeypress="return soloNumeros(event)"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false" class="centered-text">(=) Compras totales</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true" data-placeholder="$ -"><span id="compras-totales">$ -</span></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">(-) menos: Devoluciones sobre compras</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ ---" onkeypress="return soloNumeros(event)"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false" class="centered-text">(=) Compras Netas</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true" data-placeholder="$ -"><span id="compras-netas">$ -</span></td>
+      </tr>
+      <tr>
+        <td contenteditable="false" class="centered-text">Suma total de Mercancías</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true" data-placeholder="$ -"><span id="total-mercancias">$ -</span></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">(-) menos: Inventario Final</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ ---" onkeypress="return soloNumeros(event)"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false" class="centered-text">Costo de lo vendido</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ ---" onkeypress="return soloNumeros(event)"></td>
+        <td contenteditable="true" data-placeholder="$ -"><span id="costo-vendido">$ -</span></td>
+      </tr>
+      <tr>
+        <td contenteditable="false" class="centered-text">Utilidad Bruta</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true" data-placeholder="$ -"><span id="utilidad-bruta">$ -</span></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">Gastos de Operación</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">Gastos de Venta:</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">Renta de bodega</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ ---" onkeypress="return soloNumeros(event)"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">Vendedores</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ ---" onkeypress="return soloNumeros(event)"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">Propaganda y publicidad</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ ---" onkeypress="return soloNumeros(event)"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">Luz de bodega</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ ---" onkeypress="return soloNumeros(event)"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">Otros</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ ---" onkeypress="return soloNumeros(event)"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false" class="centered-text">Gastos de Administración</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true" data-placeholder="$ -"><span id="gastos-admisitrativos">$ -</span></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">Renta de oficinas</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ ---" onkeypress="return soloNumeros(event)"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">Internet</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ ---" onkeypress="return soloNumeros(event)"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">Nomina</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ ---" onkeypress="return soloNumeros(event)"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">Otro</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ ---" onkeypress="return soloNumeros(event)"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false" class="centered-text">Utilidad de operación</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true" data-placeholder="$ -"><span id="gastos-utilidad">$ -</span></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">Utilidad antes de Impuestos</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ -"><span id="utilidad-impuestos">$ -</span></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">(-) menos: ISR 30%</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ -"><span id="isr-30">$ -</span></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false">(-) menos: PTU 10%</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true" data-placeholder="$ -"><span id="ptu-10">$ -</span></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="false" class="centered-text">Utilidad Neta del Ejercicio</td>
+        <td contenteditable="false"></td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true" data-placeholder="$ -"><span id="neta-total">$ -</span></td>
+      </tr>
+    </tbody>
+  </table>
+  
+
+<a href="#" id="mi-boton" class="back-button" onclick="window.history.back()">Regresar</a>
+
+<script>
+
+
+    // Función para agregar el evento de escucha a las celdas de cantidad y valor unitario
+  function agregarEventosDeEscucha() {
+    const cells = document.querySelectorAll('td[contenteditable="true"]');
+
+    cells.forEach(cell => {
+      cell.addEventListener('input', function() {
+        calcularEstadoRA()
+      });
+    });
+  }
+
+  // Llamar a la función para agregar los eventos de escucha al cargar la página
+  document.addEventListener('DOMContentLoaded', agregarEventosDeEscucha);
+
+//funcion para el placeholder de dinero en celdas
+document.addEventListener('DOMContentLoaded', function() {
+  const cells = document.querySelectorAll('td[contenteditable="true"]');
+
+  cells.forEach(cell => {
+    cell.addEventListener('click', function() {
+      if (this.textContent === this.getAttribute('data-placeholder')) {
+        this.textContent = '';
+      }
+    });
+
+    cell.addEventListener('blur', function() {
+      if (this.textContent.trim() === '') {
+        this.textContent = this.getAttribute('data-placeholder');
+        this.textContent = '';
+      }
+    });
+  });
+});
+//aqui termina la funcion del place holder de celdas
+
+//Funcion para que se agregen solo numeros a las celdas
+function soloNumeros(event) {
+  const charCode = event.which ? event.which : event.keyCode;
+  const inputChar = String.fromCharCode(charCode);
+
+  // Permite solo números y el backspace (código 8)
+  if (!/^\d+$/.test(inputChar) && charCode !== 8) {
+    event.preventDefault();
+    return false;
+  }
+  return true;
+  }
+  //aqui termina la funcion para que se agregen solo numeros a las celdas
+
+  
+// Función para calcular todo lo chido
+function calcularEstadoRA() {
+    // Obtener todas las filas de la tabla
+    const rows = document.querySelectorAll('#data-table tbody tr');
+
+    // Variables para almacenar los datos necesarios para la suma y resta
+    let ventasTotales = 0;
+    let devolucionesVentas = 0;
+    let descuentosVentas = 0;
+    let compras = 0;
+    let gastosCompra = 0;
+    let devolucionesCompras = 0;
+    let inventarioInicial = 0;
+    let inventarioFinal = 0;
+    let costVendido = 0;
+    let rentaBodega = 0;
+    let vendedores = 0;
+    let propagandaPublicidad = 0;
+    let luzBodega = 0;
+    let otrosGastos = 0;
+    let rentaOficinas = 0;
+    let internet = 0;
+    let nomina = 0;
+    let otrosGastosUno = 0;
+
+    // Recorrer todas las filas y obtener los datos necesarios para la suma y resta
+    rows.forEach(row => {
+      const nombre = row.querySelector('td:first-child').textContent;
+      const datosCell = row.querySelector('td[contenteditable="true"]');
+      const datos = parseFloat(datosCell.textContent.replace(/[^0-9.-]+/g, ""));
+      
+      if (!isNaN(datos)) {
+        if (nombre === "Ventas totales") {
+          ventasTotales += datos;
+        } else if (nombre === "(-) menos: Devoluciones sobre ventas") {
+          devolucionesVentas += datos;
+        } else if (nombre === "(-) menos: Descuentos sobre ventas") {
+          descuentosVentas += datos;
+        } else if (nombre === "(+) más: Compras") {
+          compras += datos;
+        } else if (nombre === "(+) más: Gastos de compra") {
+          gastosCompra += datos;
+        } else if (nombre === "(-) menos: Devoluciones sobre compras") {
+          devolucionesCompras += datos;
+        } else if (nombre === "Inventario Inicial") {
+          inventarioInicial += datos;
+        } else if (nombre === "(-) menos: Inventario Final") {
+          inventarioFinal += datos;
+        } else if (nombre === "Costo de lo vendido") {
+          costVendido += datos;//aqui agrege el costo
+        } else if (nombre === "Renta de bodega") {
+          rentaBodega += datos;
+        } else if (nombre === "Vendedores") {
+          vendedores += datos;
+        } else if (nombre === "Propaganda y publicidad") {
+          propagandaPublicidad += datos;
+        } else if (nombre === "Luz de bodega") {
+          luzBodega += datos;
+        } else if (nombre === "Otros") {
+          otrosGastos += datos;
+        } else if (nombre === "Renta de oficinas") {
+          rentaOficinas += datos;
+        } else if (nombre === "Internet") {
+          internet += datos;
+        } else if (nombre === "Nomina") {
+          nomina += datos;
+        } else if (nombre === "Otro") {
+          otrosGastosUno += datos;
+        } 
+      }
+    });
+
+    // Realizar las sumas y restas y obtener los resultados
+    const ventasNetas = ventasTotales - devolucionesVentas - descuentosVentas;
+    const comprasTotales = compras + gastosCompra;
+    const comprasNetas = comprasTotales - devolucionesCompras;
+    const totalMercancias = inventarioInicial + comprasNetas;
+    const costoVendido = totalMercancias - inventarioFinal + costVendido;
+    const utilidadBruta = ventasNetas - costoVendido;
+    const gastosCero = rentaBodega + vendedores + propagandaPublicidad + luzBodega + otrosGastos;
+    const gastosUno = rentaOficinas + internet + nomina + otrosGastosUno;
+    const utilidadImpuestos = utilidadBruta - gastosCero - gastosUno;
+    const isr30 = utilidadImpuestos * 0.3;
+    const ptu10 = utilidadImpuestos * 0.1;
+    const sumaNeta = isr30 + ptu10;
+    const utilidadNetaTotal = utilidadImpuestos - sumaNeta;
+
+
+    // Mostrar los resultados en las etiquetas <span>
+    const ventasNetasSpan = document.getElementById('ventas-netas');
+    ventasNetasSpan.textContent = "$ " + ventasNetas.toFixed(2);
+
+    const comprasTotalesSpan = document.getElementById('compras-totales');
+    comprasTotalesSpan.textContent = "$ " + comprasTotales.toFixed(2);
+
+    const comprasNetasSpan = document.getElementById('compras-netas');
+    comprasNetasSpan.textContent = "$ " + comprasNetas.toFixed(2);
+
+    const totalMercanciasSpan = document.getElementById('total-mercancias');
+    totalMercanciasSpan.textContent = "$ " + totalMercancias.toFixed(2);
+
+    const costoVendidoSpan = document.getElementById('costo-vendido');
+    costoVendidoSpan.textContent = "$ " + costoVendido.toFixed(2);
+
+    const utilidadBrutaSpan = document.getElementById('utilidad-bruta');
+    utilidadBrutaSpan.textContent = "$ " + utilidadBruta.toFixed(2);
+
+    const gastosCeroSpan = document.getElementById('gastos-admisitrativos');
+    gastosCeroSpan.textContent = "$ " + gastosCero.toFixed(2);
+
+    const gastosUnoSpan = document.getElementById('gastos-utilidad');
+    gastosUnoSpan.textContent = "$ " + gastosUno.toFixed(2);
+
+    const utilidadImpuestosSpan = document.getElementById('utilidad-impuestos');
+    utilidadImpuestosSpan.textContent = "$ " + utilidadImpuestos.toFixed(2);
+
+    const isr30Span = document.getElementById('isr-30');
+    isr30Span.textContent = "$ " + isr30.toFixed(2);
+
+    const ptu10Span = document.getElementById('ptu-10');
+    ptu10Span.textContent = "$ " + ptu10.toFixed(2);
+    
+    const utilidadNetaTotalSpan = document.getElementById('neta-total');
+    utilidadNetaTotalSpan.textContent = "$ " + utilidadNetaTotal.toFixed(2);
+
+  }
+
+
+</script>
+
+</body>
+</html>
